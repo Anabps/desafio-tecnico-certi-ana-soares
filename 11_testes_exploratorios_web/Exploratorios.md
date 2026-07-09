@@ -89,7 +89,8 @@ Durante a execução foram avaliados cenários como:
 ## 7. Defeitos Encontrados
 
 ## BUG-001
-Título
+### Título
+
 Campo First Name e Last Name aceitam entradas inválidas.
 
 Passos para reproduzir:
@@ -104,38 +105,45 @@ Passos para reproduzir:
 Resultado esperado:
 - Os campos deveriam aceitar apenas caracteres alfabéticos, limitar o tamanho máximo permitido e rejeitar entradas compostas apenas por números, símbolos ou espaços.
 
-Resultado obtido
+Resultado obtido:
 - Os campos aceitam todas as entradas informadas sem validação.
 
-Severidade
+Severidade:
 - Média
 
-Prioridade
+Prioridade:
 -Alta
 
-Evidência
+Evidência:
 
 ![BUG-001](Evidencias/bug01.png)
 
 ---
 
 ## BUG-002
-Título
+### Título
+
 Campo Address aceita valores inválidos sem validação.
-Passos para reproduzir
+
+Passos para reproduzir:
 1.	Informar um endereço extremamente longo.
 2.	Informar apenas uma letra.
 3.	Informar apenas um número.
 4.	Informar apenas um símbolo.
-Resultado esperado
-O sistema deveria validar um tamanho mínimo e máximo e impedir entradas incompatíveis com um endereço.
-Resultado obtido
-O campo aceita qualquer conteúdo informado.
-Severidade
-Baixa
-Prioridade
-Média
-Evidência
+
+Resultado esperado:
+- O sistema deveria validar um tamanho mínimo e máximo e impedir entradas incompatíveis com um endereço.
+
+Resultado obtido:
+- O campo aceita qualquer conteúdo informado.
+
+Severidade:
+- Baixa
+
+Prioridade:
+- Média
+
+Evidência:
 
 ![BUG-002](Evidencias/bug02.png)
 
