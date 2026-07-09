@@ -1,5 +1,7 @@
 ## Relatório de Testes Exploratórios
+
 9 de julho de 2026
+
 Ana Beatriz Pimentel Soares
 
 
@@ -16,12 +18,9 @@ http://demo.automationtesting.in/Register.html
 ---
 
 ## 3. Ambiente de Testes
-Item	               Valor
+
 Sistema Operacional	   Windows 11
-Navegador	           Google Chrome
-Resolução	           1920x1080
-Tipo de teste	       Manual
-Técnica	               Testes Exploratórios
+
 
 ---
 
@@ -105,6 +104,7 @@ Média
 Prioridade
 Alta
 Evidência
+
 ![BUG-001](Evidencias/bug01.png)
 
 ---
@@ -126,6 +126,7 @@ Baixa
 Prioridade
 Média
 Evidência
+
 ![BUG-002](Evidencias/bug02.png)
 
 ---
@@ -145,6 +146,7 @@ Alta
 Prioridade
 Alta
 Evidência
+
 ![BUG-003](Evidencias/bug03.png)
 
 ---
@@ -164,6 +166,7 @@ Baixa
 Prioridade
 Média
 Evidência
+
 ![BUG-004](Evidencias/bug04.png)
 
 ---
@@ -183,6 +186,7 @@ Baixa
 Prioridade
 Baixa
 Evidência
+
 ![BUG-005](Evidencias/bug05.png)
 
 ---
@@ -204,6 +208,7 @@ Baixa
 Observação
 Necessita validação do requisito funcional.
 Evidência
+
 ![BUG-006](Evidencias/bug06.png)
  
  ---
@@ -224,6 +229,7 @@ Crítica
 Prioridade
 Crítica
 Evidência
+
 ![BUG-007](Evidencias/bug07.png)
  
  ---
@@ -244,6 +250,7 @@ Baixa
 Observação
 Depende da regra de negócio.
 Evidência
+
 ![BUG-008](Evidencias/bug08.png)
 
 ---
@@ -265,6 +272,7 @@ Alta
 Prioridade
 Alta
 Evidência
+
 ![BUG-009](Evidencias/bug09.png)
 
 ---
@@ -284,6 +292,7 @@ Média
 Prioridade
 Alta
 Evidência
+
 ![BUG-010](Evidencias/bug10.png)
 
 ---
@@ -304,6 +313,7 @@ Alta
 Prioridade
 Alta
 Evidência
+
 ![BUG-011](Evidencias/bug11.png)
 
 ---
@@ -323,6 +333,7 @@ Crítica
 Prioridade
 Crítica
 Evidência
+
 ![BUG-012](Evidencias/bug12.png)
 
 ---
@@ -342,6 +353,7 @@ Alta
 Prioridade
 Alta
 Evidência
+
 ![BUG-013](Evidencias/bug13.png)
  
  ---
@@ -364,6 +376,7 @@ Alta
 Prioridade
 Alta
 Evidência
+
 ![BUG-014](Evidencias/bug14.png)
 
 ---
@@ -383,6 +396,7 @@ Baixa
 Prioridade
 Baixa
 Evidência
+
 ![BUG-015](Evidencias/bug15.png)
  
  ---
