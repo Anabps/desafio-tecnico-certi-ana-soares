@@ -1,6 +1,6 @@
 ## Casos de Testes - Register
-9 de julho de 2026
-Ana Beatriz Pimentel Soares
+**9 de julho de 2026
+**Ana Beatriz Pimentel Soares
 
 ## Informações Gerais
 Aplicação: http://demo.automationtesting.in/Register.html
@@ -156,19 +156,5 @@ Resultado Esperado:
 Os idiomas selecionados devem permanecer corretamente registrados e visíveis para o usuário.
 
 ---
-
-## Prioridades
-
-ID	    Caso de Teste	             Prioridade
-CT-001	Cadastro com dados válidos	 Alta
-CT-002	Campos obrigatórios	         Alta
-CT-003	E-mail inválido	             Alta
-CT-004	Senhas diferentes	         Alta
-CT-005	Senha mínima	             Alta
-CT-006	Upload de imagem	         Média
-CT-007	Data de nascimento	         Média
-CT-008	Campo Phone	                 Média
-CT-009	Campo Country	             Crítica
-CT-010	Seleção de idiomas	         Baixa
 
 
