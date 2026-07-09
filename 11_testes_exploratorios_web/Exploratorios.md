@@ -26,41 +26,44 @@ Sistema Operacional	   Windows 11
 
 ## 4. Estratégia Utilizada
 Os testes foram conduzidos utilizando abordagem exploratória baseada em experiência (Experience-Based Testing), buscando validar:
-•	Campos obrigatórios;
-•	Validação de dados;
-•	Restrições de entrada;
-•	Navegação entre campos;
-•	Comportamento dos componentes da interface;
-•	Consistência visual;
-•	Mensagens de erro;
-•	Fluxo de cadastro.
+
+- Campos obrigatórios;
+- Validação de dados;
+- Restrições de entrada;
+- Navegação entre campos;
+- Comportamento dos componentes da interface;
+- Consistência visual;
+- Mensagens de erro;
+- Fluxo de cadastro.
+
 Foram aplicadas técnicas como:
-•	Boundary Value Analysis (quando aplicável);
-•	Entrada de dados inválidos;
-•	Entrada de dados extremos;
-•	Tentativas de envio incompleto;
-•	Navegação não convencional;
-•	Testes de usabilidade.
+
+- Boundary Value Analysis (quando aplicável);
+- Entrada de dados inválidos;
+- Entrada de dados extremos;
+- Tentativas de envio incompleto;
+- Navegação não convencional;
+- Testes de usabilidade.
 
 ---
 
 ## 5. Funcionalidades Exploradas
-Funcionalidades
-Nome
-Sobrenome
-Endereço
-E-mail
-Telefone
-Gênero
-Hobbies
-Idiomas
-Skills
-País
-Data de nascimento
-Senha
-Confirmar senha
-Upload de imagem
-Submit
+- Funcionalidades
+- Nome
+- Sobrenome
+- Endereço
+- E-mail
+- Telefone
+- Gênero
+- Hobbies
+- Idiomas
+- Skills
+- País
+- Data de nascimento
+- Senha
+- Confirmar senha
+- Upload de imagem
+- Submit
 
 ---
 
