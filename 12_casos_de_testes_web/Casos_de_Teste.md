@@ -5,7 +5,9 @@ Ana Beatriz Pimentel Soares
 
 ## Informações Gerais
 Aplicação: http://demo.automationtesting.in/Register.html
+
 Tipo de Teste: Funcional
+
 Objetivo: Validar o funcionamento do formulário de cadastro, verificando regras de negócio, validações dos campos e comportamento da aplicação.
 
 ---
@@ -21,20 +23,22 @@ Passos:
 4.	Informar senha e confirmação de senha iguais.
 5.	Selecionar uma imagem válida.
 6.	Clicar em Submit.
+
 Dados de Teste:
+
 Campo -> Valor
 
-First Name	Ana
+First Name: Ana
 
-Last Name	Soares
+Last Name: Soares
 
-Email	ana@email.com
+Email: ana@email.com
 
-Phone	92999999999
+Phone: 92999999999
 
-Password	Teste@123
+Password: Teste@123
 
-Confirm Password	Teste@123
+Confirm Password: Teste@123
 
 Resultado Esperado:
 O formulário deve ser enviado com sucesso e o usuário deve ser direcionado para a próxima tela ou receber uma mensagem de confirmação.
@@ -49,6 +53,7 @@ Passos:
 1.	Abrir a aplicação.
 2.	Não preencher nenhum campo.
 3.	Clicar em Submit.
+
 Resultado Esperado:
 O sistema deve impedir o envio do formulário e apresentar mensagens claras indicando todos os campos obrigatórios.
 
@@ -62,6 +67,7 @@ Passos:
 1.	Preencher os campos obrigatórios.
 2.	Informar o e-mail usuario@teste.
 3.	Submeter o formulário.
+
 Resultado Esperado:
 O sistema deve rejeitar o cadastro e informar que o e-mail é inválido.
 
@@ -77,6 +83,7 @@ Passos:
 o	Password: Senha@123
 o	Confirm Password: Senha@321
 3.	Clicar em Submit.
+
 Resultado Esperado:
 O sistema deve impedir o cadastro e apresentar mensagem informando que as senhas não coincidem.
 
@@ -91,6 +98,7 @@ Passos:
 1.	Informar uma senha composta por apenas um caractere.
 2.	Confirmar a mesma senha.
 3.	Submeter o formulário.
+
 Resultado Esperado:
 O sistema deve rejeitar a senha e informar os requisitos mínimos de segurança.
 
@@ -103,6 +111,7 @@ Pré-condições:
 Passos:
 1.	Selecionar um arquivo PDF.
 2.	Repetir o teste com DOCX, TXT e PPTX.
+
 Resultado Esperado:
 O sistema deve aceitar apenas arquivos de imagem compatíveis (JPG, JPEG ou PNG).
 
@@ -118,6 +127,7 @@ o	Dia: 31
 o	Mês: Fevereiro
 o	Ano: 2020
 2.	Continuar o cadastro.
+
 Resultado Esperado:
 O sistema deve impedir a seleção ou submissão de datas inexistentes.
 
@@ -133,6 +143,7 @@ Passos:
 2.	Informar símbolos.
 3.	Informar número com quantidade inferior ao esperado.
 4.	Informar número com quantidade superior ao esperado.
+
 Resultado Esperado:
 O sistema deve aceitar apenas números dentro do formato estabelecido.
 
@@ -146,6 +157,7 @@ Passos:
 1.	Preencher os demais campos.
 2.	Selecionar um país.
 3.	Submeter o formulário.
+
 Resultado Esperado:
 O sistema deve permitir a seleção do país e concluir o cadastro normalmente.
 
@@ -160,6 +172,7 @@ Passos:
 2.	Selecionar dois idiomas.
 3.	Fechar a lista.
 4.	Abrir novamente.
+
 Resultado Esperado:
 Os idiomas selecionados devem permanecer corretamente registrados e visíveis para o usuário.
 
