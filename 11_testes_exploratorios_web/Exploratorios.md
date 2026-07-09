@@ -169,250 +169,287 @@ Alta
 ---
 
 ## BUG-004
-Título
-Campo Phone não informa o formato esperado.
-Passos para reproduzir
+### Título: Campo Phone não informa o formato esperado.
+- Passos para reproduzir
 1.	Informar diferentes formatos de telefone.
 2.	Observar o comportamento do campo.
-Resultado esperado
+- Resultado esperado:
+
 O sistema deveria informar claramente o formato esperado ou aplicar máscara de preenchimento.
-Resultado obtido
+- Resultado obtido:
+
 Não existe indicação do formato esperado para o telefone.
-Severidade
+- Severidade:
+
 Baixa
-Prioridade
+- Prioridade:
+
 Média
-Evidência
+- Evidência:
 
 ![BUG-004](Evidencias/bug04.png)
 
 ---
 
 ## BUG-005
-Título
-Idioma selecionado desaparece da lista de seleção.
-Passos para reproduzir
+### Título: Idioma selecionado desaparece da lista de seleção.
+- Passos para reproduzir
 1.	Selecionar um idioma.
 2.	Abrir novamente a lista de idiomas.
-Resultado esperado
+- Resultado esperado:
+
 O idioma selecionado deveria permanecer visível e identificado como selecionado.
-Resultado obtido
+- Resultado obtido:
+
 O idioma deixa de aparecer na lista.
-Severidade
+- Severidade:
+
 Baixa
-Prioridade
+- Prioridade:
+
 Baixa
-Evidência
+- Evidência:
 
 ![BUG-005](Evidencias/bug05.png)
 
 ---
 
 ## BUG-006
-Título
-Campo Skills permite selecionar apenas uma habilidade.
-Passos para reproduzir
+### Título: Campo Skills permite selecionar apenas uma habilidade.
+- Passos para reproduzir:
 1.	Selecionar uma habilidade.
 2.	Tentar selecionar outra.
-Resultado esperado
+- Resultado esperado:
+
 Caso o requisito permita múltiplas habilidades, o sistema deveria possibilitar múltiplas seleções.
-Resultado obtido
+- Resultado obtido:
+
 É possível selecionar apenas uma habilidade.
-Severidade
+- Severidade:
+
 Baixa
-Prioridade
+- Prioridade:
 Baixa
-Observação
+- Observação:
+
 Necessita validação do requisito funcional.
-Evidência
+- Evidência:
 
 ![BUG-006](Evidencias/bug06.png)
  
  ---
 
 ## BUG-007
-Título
-Campo Country impede a conclusão do cadastro.
-Passos para reproduzir
+### Título: Campo Country impede a conclusão do cadastro.
+- Passos para reproduzir:
 1.	Preencher todos os campos do formulário.
 2.	Tentar selecionar um país.
 3.	Submeter o formulário.
-Resultado esperado
+- Resultado esperado:
+
 O usuário deveria conseguir selecionar um país e concluir o cadastro.
-Resultado obtido
+- Resultado obtido:
+
 O campo não permite seleção adequada, impossibilitando a submissão do formulário.
-Severidade
+- Severidade:
+
 Crítica
-Prioridade
+- Prioridade:
+
 Crítica
-Evidência
+- Evidência:
 
 ![BUG-007](Evidencias/bug07.png)
  
  ---
 
 ## BUG-008
-Título
-Campo Year aceita anos antigos.
-Passos para reproduzir
+### Título: Campo Year aceita anos antigos.
+- Passos para reproduzir:
 1.	Selecionar o ano 1916.
 Resultado esperado
 O sistema deveria limitar datas de nascimento conforme as regras de negócio.
-Resultado obtido
+- Resultado obtido:
+
 É possível selecionar anos antigos.
-Severidade
+- Severidade:
+
 Baixa
-Prioridade
+- Prioridade:
+
 Baixa
-Observação
+- Observação:
+
 Depende da regra de negócio.
-Evidência
+- Evidência:
 
 ![BUG-008](Evidencias/bug08.png)
 
 ---
 
 ## BUG-009
-Título
-É possível selecionar datas inexistentes.
-Passos para reproduzir
+### Título: É possível selecionar datas inexistentes.
+- Passos para reproduzir:
 1.	Selecionar:
-o	Dia: 31
-o	Mês: Fevereiro
+- Dia: 31
+- Mês: Fevereiro
 2.	Continuar o cadastro.
-Resultado esperado
+- Resultado esperado:
+
 Datas inválidas não deveriam ser permitidas.
-Resultado obtido
+- Resultado obtido:
+
 O sistema aceita uma data inexistente.
-Severidade
+- Severidade:
+
 Alta
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-009](Evidencias/bug09.png)
 
 ---
 
 ## BUG-010
-Título
-O formulário não apresenta mensagens claras para campos obrigatórios.
-Passos para reproduzir
+### Título: O formulário não apresenta mensagens claras para campos obrigatórios.
+- Passos para reproduzir:
 1.	Abrir a página.
 2.	Clicar em Submit sem preencher os campos.
-Resultado esperado
+- Resultado esperado:
+
 O sistema deveria informar claramente todos os campos obrigatórios não preenchidos.
-Resultado obtido
+- Resultado obtido:
+
 As mensagens apresentadas são insuficientes e dependem da validação padrão do navegador.
-Severidade
+- Severidade:
+
 Média
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-010](Evidencias/bug10.png)
 
 ---
 
 ## BUG-011
-Título
-Campos Password e Confirm Password não são tratados como obrigatórios.
-Passos para reproduzir
+### Título: Campos Password e Confirm Password não são tratados como obrigatórios.
+- Passos para reproduzir:
 1.	Preencher os demais campos.
 2.	Deixar os campos de senha vazios.
 3.	Prosseguir com o cadastro.
-Resultado esperado
+- Resultado esperado:
+
 Os campos deveriam ser obrigatórios.
-Resultado obtido
+- Resultado obtido:
+
 Não há indicação clara de obrigatoriedade.
-Severidade
+- Severidade:
+
 Alta
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-011](Evidencias/bug11.png)
 
 ---
 
 ## BUG-012
-Título
-Sistema aceita senhas diferentes entre Password e Confirm Password.
-Passos para reproduzir
+### Título: Sistema aceita senhas diferentes entre Password e Confirm Password.
+- Passos para reproduzir:
 1.	Informar senhas diferentes.
 2.	Submeter o formulário.
-Resultado esperado
+- Resultado esperado:
+
 O sistema deveria impedir o cadastro e informar que as senhas não coincidem.
-Resultado obtido
+- Resultado obtido: 
+
 O formulário aceita senhas diferentes.
-Severidade
+- Severidade:
+
 Crítica
-Prioridade
+- Prioridade:
+
 Crítica
-Evidência
+- Evidência:
 
 ![BUG-012](Evidencias/bug12.png)
 
 ---
 
 ## BUG-013
-Título
-Campo de senha aceita senha composta por apenas um caractere.
-Passos para reproduzir
+### Título: Campo de senha aceita senha composta por apenas um caractere.
+- Passos para reproduzir:
 1.	Informar uma senha contendo apenas um caractere.
 2.	Confirmar a mesma senha.
-Resultado esperado
+- Resultado esperado:
+
 A senha deveria respeitar uma política mínima de segurança.
-Resultado obtido
+- Resultado obtido:
+
 O sistema aceita senha composta por apenas um caractere.
-Severidade
+- Severidade:
+
 Alta
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-013](Evidencias/bug13.png)
  
  ---
 
 ## BUG-014
-Título
-Campo de upload aceita formatos de arquivo não esperados.
-Passos para reproduzir
+### Título: Campo de upload aceita formatos de arquivo não esperados.
+- Passos para reproduzir:
 1.	Selecionar arquivos nos formatos:
-o	PDF
-o	DOCX
-o	PPTX
-o	TXT
-Resultado esperado
+- PDF
+- DOCX
+- PPTX
+- TXT
+
+- Resultado esperado:
+
 O sistema deveria aceitar apenas formatos de imagem compatíveis.
-Resultado obtido
+- Resultado obtido:
+
 Arquivos que não são imagens são aceitos.
-Severidade
+- Severidade:
+
 Alta
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-014](Evidencias/bug14.png)
 
 ---
 
 ## BUG-015
-Título
-Imagem selecionada não é exibida ao usuário.
-Passos para reproduzir
+### Título: Imagem selecionada não é exibida ao usuário.
+- Passos para reproduzir:
 1.	Selecionar uma imagem válida.
 2.	Observar o campo de upload.
-Resultado esperado
+- Resultado esperado:
+
 O sistema deveria apresentar uma pré-visualização ou alguma confirmação visual do arquivo selecionado.
-Resultado obtido
+- Resultado obtido:
+
 A imagem não é exibida após a seleção.
-Severidade
+- Severidade:
+
 Baixa
-Prioridade
+- Prioridade:
+
 Baixa
-Evidência
+- Evidência:
 
 ![BUG-015](Evidencias/bug15.png)
  
@@ -420,10 +457,10 @@ Evidência
 
 ## 8. Considerações
 Durante a execução dos testes também foram identificadas oportunidades de melhoria que não caracterizam necessariamente defeitos funcionais:
-•	Implementar opção para visualizar/ocultar as senhas digitadas.
-•	Impedir a seleção dos valores padrão "Year", "Month" e "Day" durante a submissão do formulário.
-•	Reduzir a quantidade de anúncios presentes na página, melhorando a experiência do usuário.
-•	Exibir instruções de preenchimento (máscaras, placeholders e exemplos) em campos como telefone e endereço.
+- Implementar opção para visualizar/ocultar as senhas digitadas.
+- Impedir a seleção dos valores padrão "Year", "Month" e "Day" durante a submissão do formulário.
+- Reduzir a quantidade de anúncios presentes na página, melhorando a experiência do usuário.
+- Exibir instruções de preenchimento (máscaras, placeholders e exemplos) em campos como telefone e endereço.
 
 ---
 
