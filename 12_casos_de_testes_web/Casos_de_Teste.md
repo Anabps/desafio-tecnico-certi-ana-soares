@@ -1,11 +1,13 @@
 ## Casos de Testes - Register
-**9 de julho de 2026
-**Ana Beatriz Pimentel Soares
+9 de julho de 2026
+
+Ana Beatriz Pimentel Soares
 
 ## Informações Gerais
 Aplicação: http://demo.automationtesting.in/Register.html
 Tipo de Teste: Funcional
 Objetivo: Validar o funcionamento do formulário de cadastro, verificando regras de negócio, validações dos campos e comportamento da aplicação.
+
 ---
 
 ## CT-001 – Cadastro com dados válidos
@@ -20,14 +22,20 @@ Passos:
 5.	Selecionar uma imagem válida.
 6.	Clicar em Submit.
 Dados de Teste:
-Campo	Valor
+Campo -> Valor
+
 First Name	Ana
+
 Last Name	Soares
+
 Email	ana@email.com
 
 Phone	92999999999
+
 Password	Teste@123
+
 Confirm Password	Teste@123
+
 Resultado Esperado:
 O formulário deve ser enviado com sucesso e o usuário deve ser direcionado para a próxima tela ou receber uma mensagem de confirmação.
 
