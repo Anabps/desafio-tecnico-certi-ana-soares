@@ -69,19 +69,20 @@ Foram aplicadas técnicas como:
 
 ## 6. Cenários Explorados
 Durante a execução foram avaliados cenários como:
-•	Cadastro completamente válido;
-•	Campos obrigatórios em branco;
-•	E-mail inválido;
-•	Telefone contendo caracteres especiais;
-•	Telefone contendo letras;
-•	Senhas diferentes;
-•	Senhas vazias;
-•	Upload de arquivo;
-•	Seleção de múltiplos idiomas;
-•	Alteração de país;
-•	Datas de nascimento diferentes;
-•	Navegação utilizando teclado;
-•	Combinação de múltiplos hobbies.
+
+- Cadastro completamente válido;
+- Campos obrigatórios em branco;
+- E-mail inválido;
+- Telefone contendo caracteres especiais;
+- Telefone contendo letras;
+- Senhas diferentes;
+- Senhas vazias;
+- Upload de arquivo;
+- Seleção de múltiplos idiomas;
+- Alteração de país;
+- Datas de nascimento diferentes;
+- Navegação utilizando teclado;
+- Combinação de múltiplos hobbies.
 
 ---
 
@@ -90,22 +91,28 @@ Durante a execução foram avaliados cenários como:
 ## BUG-001
 Título
 Campo First Name e Last Name aceitam entradas inválidas.
-Passos para reproduzir
+
+Passos para reproduzir:
 1.	Abrir a página de cadastro.
 2.	Informar nos campos First Name e Last Name:
-o	uma sequência com mais de 100 caracteres;
-o	apenas um número;
-o	apenas símbolos;
-o	apenas espaços.
+- uma sequência com mais de 100 caracteres;
+- apenas um número;
+- apenas símbolos;
+- apenas espaços.
 3.	Continuar o preenchimento do formulário.
-Resultado esperado
-Os campos deveriam aceitar apenas caracteres alfabéticos, limitar o tamanho máximo permitido e rejeitar entradas compostas apenas por números, símbolos ou espaços.
+
+Resultado esperado:
+- Os campos deveriam aceitar apenas caracteres alfabéticos, limitar o tamanho máximo permitido e rejeitar entradas compostas apenas por números, símbolos ou espaços.
+
 Resultado obtido
-Os campos aceitam todas as entradas informadas sem validação.
+- Os campos aceitam todas as entradas informadas sem validação.
+
 Severidade
-Média
+- Média
+
 Prioridade
-Alta
+-Alta
+
 Evidência
 
 ![BUG-001](Evidencias/bug01.png)
