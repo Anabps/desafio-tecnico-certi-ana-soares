@@ -89,11 +89,9 @@ Durante a execução foram avaliados cenários como:
 ## 7. Defeitos Encontrados
 
 ## BUG-001
-### Título
+### Título: Campo First Name e Last Name aceitam entradas inválidas.
 
-Campo First Name e Last Name aceitam entradas inválidas.
-
-Passos para reproduzir:
+- Passos para reproduzir:
 1.	Abrir a página de cadastro.
 2.	Informar nos campos First Name e Last Name:
 - uma sequência com mais de 100 caracteres;
@@ -102,68 +100,69 @@ Passos para reproduzir:
 - apenas espaços.
 3.	Continuar o preenchimento do formulário.
 
-Resultado esperado:
-- Os campos deveriam aceitar apenas caracteres alfabéticos, limitar o tamanho máximo permitido e rejeitar entradas compostas apenas por números, símbolos ou espaços.
+- Resultado esperado:
 
-Resultado obtido:
-- Os campos aceitam todas as entradas informadas sem validação.
+Os campos deveriam aceitar apenas caracteres alfabéticos, limitar o tamanho máximo permitido e rejeitar entradas compostas apenas por números, símbolos ou espaços.
+- Resultado obtido:
 
-Severidade:
-- Média
+Os campos aceitam todas as entradas informadas sem validação.
+- Severidade:
 
-Prioridade:
--Alta
+Média
+- Prioridade:
 
-Evidência:
+Alta
+- Evidência:
 
 ![BUG-001](Evidencias/bug01.png)
 
 ---
 
 ## BUG-002
-### Título
+### Título: Campo Address aceita valores inválidos sem validação.
 
-Campo Address aceita valores inválidos sem validação.
-
-Passos para reproduzir:
+- Passos para reproduzir:
 1.	Informar um endereço extremamente longo.
 2.	Informar apenas uma letra.
 3.	Informar apenas um número.
 4.	Informar apenas um símbolo.
 
-Resultado esperado:
-- O sistema deveria validar um tamanho mínimo e máximo e impedir entradas incompatíveis com um endereço.
+- Resultado esperado:
 
-Resultado obtido:
-- O campo aceita qualquer conteúdo informado.
+O sistema deveria validar um tamanho mínimo e máximo e impedir entradas incompatíveis com um endereço.
+- Resultado obtido:
 
-Severidade:
-- Baixa
+O campo aceita qualquer conteúdo informado.
+- Severidade:
 
-Prioridade:
-- Média
+Baixa
+- Prioridade:
 
-Evidência:
+Média
+- Evidência:
 
 ![BUG-002](Evidencias/bug02.png)
 
 ---
 
 ## BUG-003
-Título
-Campo E-mail aceita domínio inválido.
-Passos para reproduzir
+### Título: Campo E-mail aceita domínio inválido.
+- Passos para reproduzir
 1.	Informar um e-mail com domínio inexistente.
 2.	Prosseguir com o preenchimento.
-Resultado esperado
+- Resultado esperado:
+
 O sistema deveria validar o formato completo do endereço de e-mail.
-Resultado obtido
+- Resultado obtido:
+
 O e-mail é aceito mesmo contendo domínio inválido.
-Severidade
+- Severidade:
+
 Alta
-Prioridade
+- Prioridade:
+
 Alta
-Evidência
+- Evidência:
 
 ![BUG-003](Evidencias/bug03.png)
 
