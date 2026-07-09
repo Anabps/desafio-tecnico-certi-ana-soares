@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-07-09T19:12:59.260516" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro" source="C:\desafio-tecnico-certi-ana-soares\2_automacao_web\tests\cadastro.robot">
+<test id="s1-t1" name="CT001 - Cadastro com Dados Válidos" line="11">
+<kw name="Abrir Navegador" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:12:59.923242" level="INFO">Opening browser 'Chrome' to base url 'http://demo.automationtesting.in/Register.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T19:12:59.923242" elapsed="10.664991"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T19:13:10.588233" elapsed="0.071817"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:12:59.922241" elapsed="10.737809"/>
+</kw>
+<kw name="Preencher Dados Válidos" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:10.939921" level="INFO">Typing text 'Ana' into text field 'xpath=//input[@placeholder='First Name']'.</msg>
+<arg>${FIRST_NAME_FIELD}</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:10.823580" elapsed="0.446819"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:11.271400" level="INFO">Typing text 'Soares' into text field 'xpath=//input[@placeholder='Last Name']'.</msg>
+<arg>${LAST_NAME_FIELD}</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:11.270399" elapsed="0.248455"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:11.519363" level="INFO">Typing text 'Manaus - Amazonas' into text field 'xpath=//textarea[@ng-model='Adress']'.</msg>
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${ADDRESS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:11.519363" elapsed="0.524454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:12.045796" level="INFO">Typing text 'ana@email.com' into text field 'xpath=//input[@type='email']'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:12.044795" elapsed="0.738668"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:12.783970" level="INFO">Typing text '92999999999' into text field 'xpath=//input[@type='tel']'.</msg>
+<arg>${PHONE_FIELD}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:12.783463" elapsed="0.282586"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:13.068636" level="INFO">Clicking element 'xpath=//input[@value='Male']'.</msg>
+<arg>${GENDER_MALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:13.067091" elapsed="0.258589"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:13.326679" level="INFO">Typing password into text field 'id=firstpassword'.</msg>
+<msg time="2026-07-09T19:13:13.419801" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:13.325680" elapsed="0.294324"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:13.621004" level="INFO">Typing password into text field 'id=secondpassword'.</msg>
+<msg time="2026-07-09T19:13:13.720672" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${CONFIRM_PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:13.620004" elapsed="0.227663"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:10.776984" elapsed="3.070683"/>
+</kw>
+<kw name="Enviar Formulário" owner="keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-07-09T19:13:13.848666" elapsed="0.325203"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T19:13:15.174750" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T19:13:14.173869" elapsed="1.000881"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:15.174750" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click();
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-07-09T19:13:15.174750" elapsed="0.031556"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:13.848666" elapsed="1.358670"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:15.657663" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-07-09T19:13:15.657663" level="FAIL">msg=Esperava que o cadastro fosse concluído com sucesso. O teste permaneceu na página de cadastro, indicando possível ocorrência do BUG-005 (campo Country impede a submissão do formulário).</msg>
+<arg>WebTable</arg>
+<arg>msg=Esperava que o cadastro fosse concluído com sucesso. O teste permaneceu na página de cadastro, indicando possível ocorrência do BUG-005 (campo Country impede a submissão do formulário).</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="FAIL" start="2026-07-09T19:13:15.207336" elapsed="0.465787">msg=Esperava que o cadastro fosse concluído com sucesso. O teste permaneceu na página de cadastro, indicando possível ocorrência do BUG-005 (campo Country impede a submissão do formulário).</status>
+</kw>
+<kw name="Fechar Navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T19:13:15.685679" elapsed="3.904935"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:15.675109" elapsed="3.916513"/>
+</kw>
+<doc>Verifica se um usuário consegue realizar o cadastro com dados válidos.
+Resultado esperado: o formulário deve ser submetido com sucesso.
+Observação: atualmente este teste falha devido ao BUG-005, identificado durante os testes exploratórios.
+O campo Country não permite seleção, impedindo a conclusão do cadastro.</doc>
+<status status="FAIL" start="2026-07-09T19:12:59.921035" elapsed="19.670587">msg=Esperava que o cadastro fosse concluído com sucesso. O teste permaneceu na página de cadastro, indicando possível ocorrência do BUG-005 (campo Country impede a submissão do formulário).</status>
+</test>
+<test id="s1-t2" name="CT002 - Validação dos Campos Obrigatórios" line="29">
+<kw name="Abrir Navegador" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:19.594105" level="INFO">Opening browser 'Chrome' to base url 'http://demo.automationtesting.in/Register.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T19:13:19.594105" elapsed="8.620074"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T19:13:28.214179" elapsed="0.221130"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:19.594105" elapsed="8.842219"/>
+</kw>
+<kw name="Enviar Formulário" owner="keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-07-09T19:13:28.578941" elapsed="0.450936"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T19:13:30.043560" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T19:13:29.030995" elapsed="1.012565"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:30.043560" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click();
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-07-09T19:13:30.043560" elapsed="1.662081"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:28.577430" elapsed="3.128211"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:32.128753" level="INFO">Current location contains 'Register'.</msg>
+<arg>Register</arg>
+<arg>msg=O formulário não foi submetido.</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-07-09T19:13:31.776837" elapsed="0.351916"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-07-09T19:13:32.146235" level="INFO">BUG-010: A aplicação não informa claramente quais campos são obrigatórios.</msg>
+<arg>BUG-010: A aplicação não informa claramente quais campos são obrigatórios.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-07-09T19:13:32.144584" elapsed="0.003929"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T19:13:32.308634" elapsed="3.758772"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:32.277021" elapsed="3.791405"/>
+</kw>
+<doc>Verifica o comportamento ao enviar o formulário vazio.
+Resultado esperado: o sistema deve impedir a submissão e exibir mensagens claras para os campos obrigatórios.
+Resultado observado: o formulário não é enviado, porém não há mensagens claras de validação.
+Defeito relacionado: BUG-010.</doc>
+<status status="PASS" start="2026-07-09T19:13:19.591622" elapsed="16.478822"/>
+</test>
+<test id="s1-t3" name="CT003 - Senhas Diferentes" line="45">
+<kw name="Abrir Navegador" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:36.074907" level="INFO">Opening browser 'Chrome' to base url 'http://demo.automationtesting.in/Register.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T19:13:36.074907" elapsed="4.932584"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T19:13:41.007491" elapsed="7.727958"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:36.074907" elapsed="12.660542"/>
+</kw>
+<kw name="Preencher Dados Válidos" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:48.801507" level="INFO">Typing text 'Ana' into text field 'xpath=//input[@placeholder='First Name']'.</msg>
+<arg>${FIRST_NAME_FIELD}</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:48.801507" elapsed="0.489571"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:49.292070" level="INFO">Typing text 'Soares' into text field 'xpath=//input[@placeholder='Last Name']'.</msg>
+<arg>${LAST_NAME_FIELD}</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:49.292070" elapsed="0.270106"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:49.565201" level="INFO">Typing text 'Manaus - Amazonas' into text field 'xpath=//textarea[@ng-model='Adress']'.</msg>
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${ADDRESS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:49.563176" elapsed="0.802806"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:50.366977" level="INFO">Typing text 'ana@email.com' into text field 'xpath=//input[@type='email']'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:50.365982" elapsed="0.496626"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:50.865948" level="INFO">Typing text '92999999999' into text field 'xpath=//input[@type='tel']'.</msg>
+<arg>${PHONE_FIELD}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:50.863924" elapsed="0.321242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:51.186171" level="INFO">Clicking element 'xpath=//input[@value='Male']'.</msg>
+<arg>${GENDER_MALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:51.185166" elapsed="0.189304"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:51.375469" level="INFO">Typing password into text field 'id=firstpassword'.</msg>
+<msg time="2026-07-09T19:13:51.438135" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:51.374470" elapsed="0.240053"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:51.614523" level="INFO">Typing password into text field 'id=secondpassword'.</msg>
+<msg time="2026-07-09T19:13:51.706004" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${CONFIRM_PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:51.614523" elapsed="0.202710"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:48.800309" elapsed="3.016924"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:51.818745" level="INFO">Typing password into text field 'id=firstpassword'.</msg>
+<msg time="2026-07-09T19:13:51.912473" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:51.817738" elapsed="0.200806"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:52.019555" level="INFO">Typing password into text field 'id=secondpassword'.</msg>
+<msg time="2026-07-09T19:13:52.084994" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${CONFIRM_PASSWORD_FIELD}</arg>
+<arg>${WRONG_PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:13:52.018544" elapsed="0.163259"/>
+</kw>
+<kw name="Enviar Formulário" owner="keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-07-09T19:13:52.183368" elapsed="0.327771"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T19:13:53.511398" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T19:13:52.511139" elapsed="1.000259"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:53.511398" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click();
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-07-09T19:13:53.511398" elapsed="0.112999"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:52.183368" elapsed="1.441029"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:54.225459" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-07-09T19:13:54.225459" level="FAIL">msg=Esperava que o sistema bloqueasse a submissão devido às senhas diferentes.</msg>
+<arg>WebTable</arg>
+<arg>msg=Esperava que o sistema bloqueasse a submissão devido às senhas diferentes.</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="FAIL" start="2026-07-09T19:13:53.624397" elapsed="0.602169">msg=Esperava que o sistema bloqueasse a submissão devido às senhas diferentes.</status>
+</kw>
+<kw name="Fechar Navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T19:13:54.230202" elapsed="2.926942"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:54.229138" elapsed="2.928006"/>
+</kw>
+<doc>Verifica que o sistema deve impedir a submissão quando as senhas são diferentes.
+Resultado esperado: o cadastro não deve ser enviado.
+Resultado observado: a aplicação permite a tentativa de submissão.
+Defeito relacionado: BUG-012.</doc>
+<status status="FAIL" start="2026-07-09T19:13:36.073908" elapsed="21.084742">msg=Esperava que o sistema bloqueasse a submissão devido às senhas diferentes.</status>
+</test>
+<test id="s1-t4" name="CT004 - Upload de Arquivo Inválido" line="62">
+<kw name="Abrir Navegador" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:13:57.159814" level="INFO">Opening browser 'Chrome' to base url 'http://demo.automationtesting.in/Register.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T19:13:57.159814" elapsed="10.135281"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T19:14:07.296099" elapsed="0.155570"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:13:57.159814" elapsed="10.291855"/>
+</kw>
+<kw name="Realizar Upload PDF" owner="keywords">
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:14:07.467655" level="INFO">Sending C:\desafio-tecnico-certi-ana-soares\2_automacao_web\resources\teste.pdf to browser.</msg>
+<arg>${UPLOAD_BUTTON}</arg>
+<arg>C:/desafio-tecnico-certi-ana-soares/2_automacao_web/resources/teste.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:14:07.457637" elapsed="0.195938"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:14:07.454610" elapsed="0.198965"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<msg time="2026-07-09T19:14:07.660488" level="FAIL">BUG-014 confirmado: a aplicação permite selecionar um arquivo PDF no campo destinado exclusivamente ao upload de imagens.</msg>
+<arg>BUG-014 confirmado: a aplicação permite selecionar um arquivo PDF no campo destinado exclusivamente ao upload de imagens.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2026-07-09T19:14:07.659487" elapsed="0.002003">BUG-014 confirmado: a aplicação permite selecionar um arquivo PDF no campo destinado exclusivamente ao upload de imagens.</status>
+</kw>
+<kw name="Fechar Navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T19:14:07.667140" elapsed="3.167428"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:14:07.665777" elapsed="3.168791"/>
+</kw>
+<doc>Verifica que o campo de upload aceita apenas arquivos de imagem.
+Resultado esperado: arquivos PDF devem ser rejeitados.
+Resultado observado: a aplicação permite selecionar um arquivo PDF.
+Defeito relacionado: BUG-014.</doc>
+<status status="FAIL" start="2026-07-09T19:13:57.158650" elapsed="13.676916">BUG-014 confirmado: a aplicação permite selecionar um arquivo PDF no campo destinado exclusivamente ao upload de imagens.</status>
+</test>
+<test id="s1-t5" name="CT005 - Validação do Formato do Campo Phone" line="74">
+<kw name="Abrir Navegador" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:14:10.839393" level="INFO">Opening browser 'Chrome' to base url 'http://demo.automationtesting.in/Register.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T19:14:10.837560" elapsed="3.277808"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T19:14:14.115368" elapsed="8.912801"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:14:10.837560" elapsed="12.191629"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:14:23.040153" level="INFO">Typing text 'abc123' into text field 'xpath=//input[@type='tel']'.</msg>
+<arg>${PHONE_FIELD}</arg>
+<arg>abc123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T19:14:23.038625" elapsed="0.442878"/>
+</kw>
+<kw name="Enviar Formulário" owner="keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-07-09T19:14:23.491894" elapsed="0.357929"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T19:14:24.858660" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T19:14:23.849823" elapsed="1.008837"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:14:24.861973" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click();
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-07-09T19:14:24.861973" elapsed="0.086430"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:14:23.491894" elapsed="1.456509"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-09T19:14:27.646444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-07-09T19:14:27.646444" level="FAIL">Page should have contained text 'Invalid phone number' but did not.</msg>
+<arg>Invalid phone number</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-07-09T19:14:24.958586" elapsed="2.691426">Page should have contained text 'Invalid phone number' but did not.</status>
+</kw>
+<kw name="Fechar Navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T19:14:27.653767" elapsed="2.918403"/>
+</kw>
+<status status="PASS" start="2026-07-09T19:14:27.653767" elapsed="2.918403"/>
+</kw>
+<doc>Verifica que o sistema informa ao usuário o formato esperado para o campo Phone.
+Resultado esperado: uma mensagem de validação deve ser exibida quando um telefone inválido é informado.
+Resultado atual: FAIL esperado devido ao BUG-004 identificado nos testes exploratórios.</doc>
+<status status="FAIL" start="2026-07-09T19:14:10.836569" elapsed="19.735601">Page should have contained text 'Invalid phone number' but did not.</status>
+</test>
+<doc>Automação dos testes da página Register</doc>
+<status status="FAIL" start="2026-07-09T19:12:59.265722" elapsed="91.307520"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Cadastro" id="s1" pass="1" fail="4" skip="0">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
