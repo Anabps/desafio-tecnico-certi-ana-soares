@@ -469,3 +469,5 @@ Os testes exploratórios permitiram identificar diversos pontos de melhoria e de
 Foram encontradas falhas classificadas como críticas, altas, médias e baixas, evidenciando a necessidade de revisão das regras de validação do formulário, dos controles de entrada de dados e do fluxo de cadastro. A correção desses problemas contribuirá para aumentar a confiabilidade da aplicação, reduzir inconsistências cadastrais e proporcionar uma experiência mais segura e intuitiva aos usuários.
 Os resultados obtidos serviram como base para a elaboração dos casos de teste funcionais e para a definição dos cenários priorizados na automação de testes.
 
+---
+

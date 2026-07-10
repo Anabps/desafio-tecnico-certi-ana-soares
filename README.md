@@ -21,27 +21,31 @@ Todos os artefatos foram organizados de forma independente para facilitar a nave
 # Estrutura do projeto
 
 ```text
-desafio-tecnico-certi-ana-soares
-│
-├── 1_testes_exploratorios_web
-│   ├── Casos_de_Teste.md
-│   ├── Bugs.md
-│   ├── Evidencias
-│   └── README.md
+DESAFIO-TECNICO-CERTI-ANA-SOARES
 │
 ├── 2_automacao_web
 │   ├── resources
+│   ├── results
 │   ├── tests
+│   ├── README.md
 │   ├── requirements.txt
 │   ├── run_tests.bat
-│   └── README.md
+│   └── video_execucao.mp4
 │
 ├── 3_testes_api
+│   ├── Evidencias
 │   ├── Casos_de_Teste_API.md
 │   ├── FakeStore_API.postman_collection.json
-│   ├── Evidencias
 │   └── README.md
 │
+├── 11_testes_exploratorios_web
+│   ├── Evidencias
+│   └── Exploratorios.md
+│
+├── 12_casos_de_testes_web
+│   └── Casos_de_Teste.md
+│
+├── .gitignore
 └── README.md
 ```
 
